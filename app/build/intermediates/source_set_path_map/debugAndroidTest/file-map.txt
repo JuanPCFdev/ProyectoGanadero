@@ -1,6 +1,6 @@
-com.jpdev.proyectoganadero.test.app-annotation-experimental-1.3.0-0 C:\Users\aylin\.gradle\caches\transforms-3\913604e8c17ec63679e981dca099163c\transformed\annotation-experimental-1.3.0\res
-com.jpdev.proyectoganadero.test.app-core-1.5.0-1 C:\Users\aylin\.gradle\caches\transforms-3\ddf277019d9cdd1aa5f253fb1bd2fa7c\transformed\core-1.5.0\res
-com.jpdev.proyectoganadero.test.app-androidTest-2 C:\Users\aylin\AndroidStudioProjects\ProyectoGanadero\app\build\generated\res\resValues\androidTest\debug
-com.jpdev.proyectoganadero.test.app-mergeDebugAndroidTestResources-3 C:\Users\aylin\AndroidStudioProjects\ProyectoGanadero\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.jpdev.proyectoganadero.test.app-mergeDebugAndroidTestResources-4 C:\Users\aylin\AndroidStudioProjects\ProyectoGanadero\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.jpdev.proyectoganadero.test.app-merged_res-5 C:\Users\aylin\AndroidStudioProjects\ProyectoGanadero\app\build\intermediates\merged_res\debugAndroidTest
+com.jpdev.proyectoganadero.test.app-annotation-experimental-1.3.0-0 C:\Users\USER\.gradle\caches\transforms-3\913604e8c17ec63679e981dca099163c\transformed\annotation-experimental-1.3.0\res
+com.jpdev.proyectoganadero.test.app-core-1.5.0-1 C:\Users\USER\.gradle\caches\transforms-3\ddf277019d9cdd1aa5f253fb1bd2fa7c\transformed\core-1.5.0\res
+com.jpdev.proyectoganadero.test.app-androidTest-2 C:\Users\USER\AndroidStudioProjects\ProyectoGanadero\app\build\generated\res\resValues\androidTest\debug
+com.jpdev.proyectoganadero.test.app-mergeDebugAndroidTestResources-3 C:\Users\USER\AndroidStudioProjects\ProyectoGanadero\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.jpdev.proyectoganadero.test.app-mergeDebugAndroidTestResources-4 C:\Users\USER\AndroidStudioProjects\ProyectoGanadero\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.jpdev.proyectoganadero.test.app-merged_res-5 C:\Users\USER\AndroidStudioProjects\ProyectoGanadero\app\build\intermediates\merged_res\debugAndroidTest

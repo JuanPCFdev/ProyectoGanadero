@@ -3243,6 +3243,7 @@ id clip_vertical
 id clockwise
 id closest
 id collapseActionView
+id compras
 id compress
 id confirm_button
 id constraint
@@ -3331,6 +3332,7 @@ id forever
 id fragment_container_view_tag
 id frost
 id fullscreen_header
+id ganancias
 id ghost_view
 id ghost_view_holder
 id gone
@@ -3341,6 +3343,7 @@ id grouping
 id groups
 id header_title
 id hideable
+id historialRecibo
 id home
 id homeAsUp
 id honorRequest
@@ -3486,6 +3489,7 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id perdidas
 id pin
 id position
 id postLayout
@@ -3619,6 +3623,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id ventas
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3857,6 +3862,14 @@ string FarmRegister_Title
 string Farm_Recomendation
 string Farm_Register
 string Farm_Title
+string Finance_description
+string Finance_description2
+string Finance_earnings
+string Finance_lost
+string Finance_receipt
+string Finance_receiptBuy
+string Finance_receiptSell
+string Finance_title
 string HomePage_Cows
 string HomePage_Diagnosis
 string HomePage_Farm

@@ -44,12 +44,12 @@ class RegisterUserActivity : AppCompatActivity() {
     }
 
     private fun Register(){
-        if(validateCredentials()){
+        if(validateCredentials() && validateName()){
             val newUser = User(
                 idList.size,
                 binding.etName.text.toString(),
                 binding.etPassword.text.toString(),
-                binding.etPhone.text.toString().toInt(),
+                binding.etPhone.text.toString(),
                 emptyList<Farm>().toMutableList()
                 )
             firebaseInstance.writeOnFirebase(newUser)
@@ -71,6 +71,19 @@ class RegisterUserActivity : AppCompatActivity() {
             }
         }
         firebaseInstance.setupDatabaseListener(postListener)
+    }
+
+    private fun validateName():Boolean{
+        var success = true
+
+        idList.forEach{ user ->
+            if(binding.etName.text.toString() == user.second.name ||
+                binding.etPhone.text.toString() == user.second.phone){
+                success = false
+            }
+        }
+
+        return success
     }
 
     private fun validateCredentials():Boolean{

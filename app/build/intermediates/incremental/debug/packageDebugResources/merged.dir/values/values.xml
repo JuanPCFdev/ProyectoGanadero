@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_app">#EAF1E2</color>
+    <color name="background_card">#EEEE</color>
+    <color name="black">#FF000000</color>
+    <color name="blue">#008AFC</color>
+    <color name="button_gray">#CECECE</color>
+    <color name="button_login_special">#008AFC</color>
+    <color name="button_red">#EF4949</color>
+    <color name="button_yellow">#FAE747</color>
+    <color name="homepage_card">#009688</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="recyclerview_background">#D4EDB8</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="FarmEditDelete_Delete">Eliminar su finca</string>
+    <string name="FarmEditDelete_Edit">Editar su finca</string>
+    <string name="FarmEditDelete_HomePage">Volver al inicio</string>
+    <string name="FarmEditDelete_Title">Bienvenido a su finca</string>
+    <string name="FarmRegister_Address">Direccion de la finca</string>
+    <string name="FarmRegister_Capacity">Capacidad de la finca</string>
+    <string name="FarmRegister_Hectares">Hectareas de la finca</string>
+    <string name="FarmRegister_Name">Nombre de la finca</string>
+    <string name="FarmRegister_Return">Regresar</string>
+    <string name="FarmRegister_Title">Registra tu finca</string>
+    <string name="Farm_Recomendation">Seleccione la finca con la que desea ingresar, en caso de no tener una finca registrada seleccione el boton registrar finca</string>
+    <string name="Farm_Register">Registrar finca</string>
+    <string name="Farm_Title">Elija su finca</string>
+    <string name="Finance_description">Dependiendo de la acción que desea realizar de click en el botón correspondiente</string>
+    <string name="Finance_description2">Los botones mostrados a continuación le permiten realizar el registro de un recibo de compra en caso de adquirir un nuevo producto o un recibo de venta en caso de vender ganado </string>
+    <string name="Finance_earnings">Ganancias</string>
+    <string name="Finance_lost">Perdidas</string>
+    <string name="Finance_receipt">Historial de recibos</string>
+    <string name="Finance_receiptBuy">Recibo de compra</string>
+    <string name="Finance_receiptSell">Recibo de venta</string>
+    <string name="Finance_title">Finanzas</string>
+    <string name="HomePage_Cows">Ganado</string>
+    <string name="HomePage_Diagnosis">Diagnostico</string>
+    <string name="HomePage_Farm">Finca</string>
+    <string name="HomePage_Finance">Finanzas</string>
+    <string name="HomePage_Help">Ayuda</string>
+    <string name="HomePage_Notifications">Notificaciones</string>
+    <string name="HomePage_Title">Software Ganadero</string>
+    <string name="HomePage_User">Usuario</string>
+    <string name="HomePage_Vaccine">Vacunas</string>
+    <string name="LogIn_Password">Contraseña</string>
+    <string name="LogIn_RecordPassword">Recordar Contraseña</string>
+    <string name="LogIn_Register">Registrarse</string>
+    <string name="LogIn_SignIn">Ingresar</string>
+    <string name="LogIn_hint_password">**********</string>
+    <string name="LogIn_hint_username">EjemploUsuario123</string>
+    <string name="Login_username">ProyectoGanadero</string>
+    <string name="RegisterUser_AlreadyRegistered">Ya Estoy Registrado</string>
+    <string name="RegisterUser_Name">Nombre</string>
+    <string name="RegisterUser_Phone">Telefono</string>
+    <string name="RegisterUser_RecordPassword">Recordar Contraseña</string>
+    <string name="RegisterUser_Security_Question">Pregunta de Seguridad</string>
+    <string name="RegisterUser_Title">Registro De Usuario</string>
+    <string name="gcm_defaultSenderId" translatable="false">235627218845</string>
+    <string name="google_api_key" translatable="false">AIzaSyDJLGWJ5aACMG7T5WQyyJK6GVWUGU715Ow</string>
+    <string name="google_app_id" translatable="false">1:235627218845:android:cb72ae7486e0d0f3e59174</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDJLGWJ5aACMG7T5WQyyJK6GVWUGU715Ow</string>
+    <string name="google_storage_bucket" translatable="false">proyecto-ganadero-a64db.appspot.com</string>
+    <string name="project_id" translatable="false">proyecto-ganadero-a64db</string>
+    <style name="Theme.ProyectoGanadero" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+    </style>
+</resources>

@@ -4,20 +4,45 @@ package com.jpdev.proyectoganadero.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.jpdev.proyectoganadero.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class ActivityFinanceBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
 
-  private ActivityFinanceBinding(@NonNull ConstraintLayout rootView) {
+  @NonNull
+  public final Button compras;
+
+  @NonNull
+  public final Button ganancias;
+
+  @NonNull
+  public final Button historialRecibo;
+
+  @NonNull
+  public final Button perdidas;
+
+  @NonNull
+  public final Button ventas;
+
+  private ActivityFinanceBinding(@NonNull ConstraintLayout rootView, @NonNull Button compras,
+      @NonNull Button ganancias, @NonNull Button historialRecibo, @NonNull Button perdidas,
+      @NonNull Button ventas) {
     this.rootView = rootView;
+    this.compras = compras;
+    this.ganancias = ganancias;
+    this.historialRecibo = historialRecibo;
+    this.perdidas = perdidas;
+    this.ventas = ventas;
   }
 
   @Override
@@ -43,10 +68,44 @@ public final class ActivityFinanceBinding implements ViewBinding {
 
   @NonNull
   public static ActivityFinanceBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.compras;
+      Button compras = ViewBindings.findChildViewById(rootView, id);
+      if (compras == null) {
+        break missingId;
+      }
 
-    return new ActivityFinanceBinding((ConstraintLayout) rootView);
+      id = R.id.ganancias;
+      Button ganancias = ViewBindings.findChildViewById(rootView, id);
+      if (ganancias == null) {
+        break missingId;
+      }
+
+      id = R.id.historialRecibo;
+      Button historialRecibo = ViewBindings.findChildViewById(rootView, id);
+      if (historialRecibo == null) {
+        break missingId;
+      }
+
+      id = R.id.perdidas;
+      Button perdidas = ViewBindings.findChildViewById(rootView, id);
+      if (perdidas == null) {
+        break missingId;
+      }
+
+      id = R.id.ventas;
+      Button ventas = ViewBindings.findChildViewById(rootView, id);
+      if (ventas == null) {
+        break missingId;
+      }
+
+      return new ActivityFinanceBinding((ConstraintLayout) rootView, compras, ganancias,
+          historialRecibo, perdidas, ventas);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }
