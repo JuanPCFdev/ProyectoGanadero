@@ -28,8 +28,8 @@ class FirebaseInstance(context: Context) {
 
 
     // Método para registrar una finca
-    fun registerFarm(userId: Int, farm: Farm) {
-        val userReference = myRef.child("users").child(userId.toString())
+    fun registerFarm(farm: Farm) {
+        val userReference = myRef.child("-NkDZHqsrh7MNdMi8cFP")
 
         userReference.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {

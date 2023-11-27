@@ -52,7 +52,6 @@ class RegisterUserActivity : AppCompatActivity() {
                 binding.etPhone.text.toString().toInt(),
                 emptyList<Farm>().toMutableList()
                 )
-            newUser.farms.add(Farm())
             firebaseInstance.writeOnFirebase(newUser)
         }
         if(validateCredentials()){

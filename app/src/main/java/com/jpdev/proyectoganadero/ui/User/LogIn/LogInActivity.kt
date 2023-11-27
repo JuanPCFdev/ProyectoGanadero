@@ -12,6 +12,7 @@ import com.jpdev.proyectoganadero.R
 import com.jpdev.proyectoganadero.data.network.FirebaseInstance
 import com.jpdev.proyectoganadero.databinding.ActivityLogInBinding
 import com.jpdev.proyectoganadero.domain.model.User
+import com.jpdev.proyectoganadero.ui.Farm.consult.FarmActivity
 import com.jpdev.proyectoganadero.ui.Home.HomePageActivity
 import com.jpdev.proyectoganadero.ui.User.Register.RegisterUserActivity
 
@@ -81,9 +82,10 @@ class LogInActivity : AppCompatActivity() {
     }
 
     private fun HomePage(key:String){
-        val intent = Intent(this,HomePageActivity::class.java)
+        val intent = Intent(this,FarmActivity::class.java)
         intent.putExtra("userKey",key)
         startActivity(intent)
+        finish()
     }
 
 }
