@@ -48,9 +48,9 @@ class FarmRegisterActivity : AppCompatActivity() {
                     emptyList<Receipt>().toMutableList()
                 )
 
-                val userId = 0
 
-                firebaseInstance.registerFarm(userId,newFarm)
+
+                firebaseInstance.registerFarm(newFarm)
                 Toast.makeText(this, "Finca registrada correctamente", Toast.LENGTH_SHORT).show()
             }
             if(validateData()){
