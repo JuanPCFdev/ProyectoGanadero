@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.jpdev.proyectoganadero.R
 import com.jpdev.proyectoganadero.data.network.FirebaseInstance
 import com.jpdev.proyectoganadero.databinding.ActivityFarmBinding
+import com.jpdev.proyectoganadero.domain.model.Farm
 import com.jpdev.proyectoganadero.ui.Farm.consult.adapterFarm.adapterFarm
 import com.jpdev.proyectoganadero.ui.Farm.register.FarmRegisterActivity
 
@@ -13,6 +14,9 @@ class FarmActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityFarmBinding
     private lateinit var firebaseInstance: FirebaseInstance
+
+    private lateinit var adapter : adapterFarm
+    private var farmList = mutableListOf<Farm>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

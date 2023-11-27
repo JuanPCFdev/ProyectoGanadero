@@ -30,12 +30,16 @@ class FarmRegisterActivity : AppCompatActivity() {
             registerFarm()
         }
         binding.btnReturnFarm.setOnClickListener{
-            val intent = Intent(this, FarmActivity::class.java)
-            startActivity(intent)
-            finish()
+            goFarm()
         }
     }
 
+    private fun goFarm(){
+        val intent = Intent(this, FarmActivity::class.java)
+
+        startActivity(intent)
+        finish()
+    }
     private fun registerFarm(){
         var key = intent.extras?.getString("userKey")
         try {
@@ -54,15 +58,12 @@ class FarmRegisterActivity : AppCompatActivity() {
                 Toast.makeText(this, "Finca registrada correctamente", Toast.LENGTH_SHORT).show()
             }
             if(validateData()){
-                val intent = Intent(this, FarmActivity::class.java )
-                startActivity(intent)
-                finish()
+                goFarm()
             }
         }catch (e: Exception){
             Log.e("Registro de Finca", "Error al registrar la finca", e)
             Toast.makeText(this, "Error al registrar la finca", Toast.LENGTH_SHORT).show()
         }
-
     }
 
     private fun validateData():Boolean{

@@ -34,4 +34,12 @@
     <string name="FarmEditDelete_Delete">Eliminar su finca</string>
     <string name="FarmEditDelete_Title">Bienvenido a su finca</string>
     <string name="FarmEditDelete_HomePage">Volver al inicio</string>
+    <string name="Finance_title">Finanzas</string>
+    <string name="Finance_description">Dependiendo de la acción que desea realizar de click en el botón correspondiente</string>
+    <string name="Finance_receiptBuy">Recibo de compra</string>
+    <string name="Finance_receiptSell">Recibo de venta</string>
+    <string name="Finance_earnings">Ganancias</string>
+    <string name="Finance_lost">Perdidas</string>
+    <string name="Finance_receipt">Historial de recibos</string>
+    <string name="Finance_description2">Los botones mostrados a continuación le permiten realizar el registro de un recibo de compra en caso de adquirir un nuevo producto o un recibo de venta en caso de vender ganado </string>
 </resources>

@@ -36,7 +36,6 @@ class FirebaseInstance(context: Context) {
                 if (snapshot.exists()) {
                     val existingUser = snapshot.getValue(User::class.java)
                     existingUser?.farms?.add(farm)
-
                     userReference.setValue(existingUser)
                 }
             }

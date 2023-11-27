@@ -9,6 +9,6 @@ class FarmViewHolder(view: View): RecyclerView.ViewHolder(view){
 
     private var binding = ItemFarmBinding.bind(view)
     fun bind(farm: Farm){
-        binding.tvFarm.text = farm.toString()
+        binding.tvFarm.text = farm.nameFarm
     }
 }
