@@ -43,13 +43,17 @@ class LogInActivity : AppCompatActivity() {
     }
 
     private fun goToHomePage(){
+        var key:String = ""
         if(validateCredentials()){
             userList.forEach{ user->
                 if(binding.etUser.text.toString() == user.second.name && binding.etPassword.text.toString() == user.second.password){
-                    HomePage(user.first)
-                }else{
-                    Toast.makeText(this, "Usuario no registrado", Toast.LENGTH_SHORT).show()
+                    key = user.first
                 }
+            }
+            if(key!=""){
+                HomePage(key)
+            }else{
+                Toast.makeText(this, "Usuario no registrado", Toast.LENGTH_SHORT).show()
             }
         }
     }
