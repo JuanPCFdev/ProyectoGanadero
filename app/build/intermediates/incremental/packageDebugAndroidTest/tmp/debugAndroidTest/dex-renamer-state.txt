@@ -1,4 +1,4 @@
-#Mon Nov 27 11:25:18 COT 2023
+#Mon Nov 27 15:48:05 COT 2023
 base.0=C\:\\Users\\aylin\\AndroidStudioProjects\\ProyectoGanadero\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
 base.1=C\:\\Users\\aylin\\AndroidStudioProjects\\ProyectoGanadero\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
 base.2=C\:\\Users\\aylin\\AndroidStudioProjects\\ProyectoGanadero\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\5\\classes.dex

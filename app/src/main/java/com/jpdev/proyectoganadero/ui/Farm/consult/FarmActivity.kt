@@ -12,19 +12,21 @@ import com.jpdev.proyectoganadero.ui.Farm.register.FarmRegisterActivity
 class FarmActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityFarmBinding
-    //private lateinit var firebaseInstance: FirebaseInstance
+    private lateinit var firebaseInstance: FirebaseInstance
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityFarmBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        //firebaseInstance = FirebaseInstance(this)
-        initListeners()
+        firebaseInstance = FirebaseInstance(this)
+        var key = intent.extras?.getString("userKey")
+        initListeners(key)
     }
 
-    private fun initListeners(){
+    private fun initListeners(key: String?){
         binding.btnRegisterFarm.setOnClickListener{
             val intent = Intent(this, FarmRegisterActivity::class.java)
+            intent.putExtra("userKey",key)
             startActivity(intent)
             finish()
         }

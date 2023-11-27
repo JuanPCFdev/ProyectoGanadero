@@ -17,6 +17,7 @@ import com.jpdev.proyectoganadero.ui.Farm.consult.FarmActivity
 class FarmRegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityFarmRegisterBinding
     private lateinit var firebaseInstance: FirebaseInstance
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityFarmRegisterBinding.inflate(layoutInflater)
@@ -36,6 +37,7 @@ class FarmRegisterActivity : AppCompatActivity() {
     }
 
     private fun registerFarm(){
+        var key = intent.extras?.getString("userKey")
         try {
             if(validateData()){
                 val newFarm = Farm(
@@ -48,9 +50,7 @@ class FarmRegisterActivity : AppCompatActivity() {
                     emptyList<Receipt>().toMutableList()
                 )
 
-
-
-                firebaseInstance.registerFarm(newFarm)
+                firebaseInstance.registerFarm(newFarm,key)
                 Toast.makeText(this, "Finca registrada correctamente", Toast.LENGTH_SHORT).show()
             }
             if(validateData()){

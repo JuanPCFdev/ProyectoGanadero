@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -30,12 +31,16 @@ public final class ActivityFarmBinding implements ViewBinding {
   @NonNull
   public final RecyclerView rvFarm;
 
+  @NonNull
+  public final TextView tvTitle;
+
   private ActivityFarmBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnRegisterFarm,
-      @NonNull LinearLayout llfirst, @NonNull RecyclerView rvFarm) {
+      @NonNull LinearLayout llfirst, @NonNull RecyclerView rvFarm, @NonNull TextView tvTitle) {
     this.rootView = rootView;
     this.btnRegisterFarm = btnRegisterFarm;
     this.llfirst = llfirst;
     this.rvFarm = rvFarm;
+    this.tvTitle = tvTitle;
   }
 
   @Override
@@ -83,7 +88,14 @@ public final class ActivityFarmBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityFarmBinding((ConstraintLayout) rootView, btnRegisterFarm, llfirst, rvFarm);
+      id = R.id.tvTitle;
+      TextView tvTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvTitle == null) {
+        break missingId;
+      }
+
+      return new ActivityFarmBinding((ConstraintLayout) rootView, btnRegisterFarm, llfirst, rvFarm,
+          tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

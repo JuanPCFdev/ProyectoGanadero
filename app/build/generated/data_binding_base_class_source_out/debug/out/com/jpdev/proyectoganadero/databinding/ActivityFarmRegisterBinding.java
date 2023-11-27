@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
@@ -42,11 +43,14 @@ public final class ActivityFarmRegisterBinding implements ViewBinding {
   @NonNull
   public final EditText etFarmName;
 
+  @NonNull
+  public final TextView tvTitle;
+
   private ActivityFarmRegisterBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button btnRegisterFarm, @NonNull Button btnReturnFarm,
       @NonNull CardView cardRegister, @NonNull EditText etFarmAddres,
       @NonNull EditText etFarmCapacity, @NonNull EditText etFarmHectares,
-      @NonNull EditText etFarmName) {
+      @NonNull EditText etFarmName, @NonNull TextView tvTitle) {
     this.rootView = rootView;
     this.btnRegisterFarm = btnRegisterFarm;
     this.btnReturnFarm = btnReturnFarm;
@@ -55,6 +59,7 @@ public final class ActivityFarmRegisterBinding implements ViewBinding {
     this.etFarmCapacity = etFarmCapacity;
     this.etFarmHectares = etFarmHectares;
     this.etFarmName = etFarmName;
+    this.tvTitle = tvTitle;
   }
 
   @Override
@@ -126,8 +131,15 @@ public final class ActivityFarmRegisterBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvTitle;
+      TextView tvTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvTitle == null) {
+        break missingId;
+      }
+
       return new ActivityFarmRegisterBinding((ConstraintLayout) rootView, btnRegisterFarm,
-          btnReturnFarm, cardRegister, etFarmAddres, etFarmCapacity, etFarmHectares, etFarmName);
+          btnReturnFarm, cardRegister, etFarmAddres, etFarmCapacity, etFarmHectares, etFarmName,
+          tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
