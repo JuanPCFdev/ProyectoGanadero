@@ -54,7 +54,7 @@ class RegisterUserActivity : AppCompatActivity() {
                 )
             firebaseInstance.writeOnFirebase(newUser)
         }
-        if(validateCredentials()){
+        if(validateCredentials() && validateName()){
             goToLogin()
         }
 
@@ -79,6 +79,7 @@ class RegisterUserActivity : AppCompatActivity() {
         idList.forEach{ user ->
             if(binding.etName.text.toString() == user.second.name ||
                 binding.etPhone.text.toString() == user.second.phone){
+                Toast.makeText(this, "El nombre de usuario o telefono estan en uso", Toast.LENGTH_SHORT).show()
                 success = false
             }
         }

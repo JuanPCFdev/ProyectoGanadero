@@ -33,6 +33,7 @@
         android:label="@string/Login_username"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.ProyectoGanadero" >
         <activity
             android:name="com.jpdev.proyectoganadero.ui.User.Register.RegisterUserActivity"
