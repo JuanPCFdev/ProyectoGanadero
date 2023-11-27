@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "com.jpdev.proyectoganadero.app-mergeDebugResources-44:/layout/activity_log_in.xml",
+        "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_log_in.xml"
+    },
+    {
+        "merged": "com.jpdev.proyectoganadero.app-mergeDebugResources-44:/layout/item_farm.xml",
+        "source": "com.jpdev.proyectoganadero.app-main-47:/layout/item_farm.xml"
+    },
+    {
+        "merged": "com.jpdev.proyectoganadero.app-mergeDebugResources-44:/layout/activity_farm_register.xml",
+        "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_farm_register.xml"
+    },
+    {
+        "merged": "com.jpdev.proyectoganadero.app-mergeDebugResources-44:/layout/activity_register_user.xml",
+        "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_register_user.xml"
+    },
+    {
+        "merged": "com.jpdev.proyectoganadero.app-mergeDebugResources-44:/layout/activity_finance.xml",
+        "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_finance.xml"
+    },
+    {
+        "merged": "com.jpdev.proyectoganadero.app-mergeDebugResources-44:/layout/activity_user.xml",
+        "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_user.xml"
+    },
+    {
+        "merged": "com.jpdev.proyectoganadero.app-mergeDebugResources-44:/layout/activity_farm_edit_delete.xml",
+        "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_farm_edit_delete.xml"
+    },
+    {
+        "merged": "com.jpdev.proyectoganadero.app-mergeDebugResources-44:/layout/activity_home_page.xml",
+        "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_home_page.xml"
+    },
+    {
+        "merged": "com.jpdev.proyectoganadero.app-mergeDebugResources-44:/layout/activity_farm.xml",
+        "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_farm.xml"
+    },
+    {
+        "merged": "com.jpdev.proyectoganadero.app-mergeDebugResources-44:/layout/activity_cow.xml",
+        "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_cow.xml"
+    }
+]
