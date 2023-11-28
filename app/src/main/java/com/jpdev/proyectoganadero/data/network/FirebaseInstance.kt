@@ -45,6 +45,41 @@ class FirebaseInstance(context: Context) {
             }
         })
     }
+    fun getUserFarms(key: String?, callback: (List<Farm>?) -> Unit) {
+        // Crea una referencia al nodo "farms" dentro del usuario identificado por "key"
+        val userReference = myRef.child(key.toString()).child("farms")
+
+        // Agrega un listener que se ejecutará una vez para leer los datos
+        userReference.addListenerForSingleValueEvent(object : ValueEventListener {
+            // Este método se llama cuando los datos se leen exitosamente
+            override fun onDataChange(snapshot: DataSnapshot) {
+                // Crea una lista mutable para almacenar las fincas del usuario
+                val farms = mutableListOf<Farm>()
+
+                // Itera sobre los hijos (fincas) del nodo "farms"
+                for (farmSnapshot in snapshot.children) {
+                    // Obtiene cada finca y la convierte a la clase Farm
+                    val farm = farmSnapshot.getValue(Farm::class.java)
+
+                    // Añade la finca a la lista, si no es nula
+                    farm?.let { farms.add(it) }
+                }
+
+                // Llama al callback proporcionando la lista de fincas al código que lo llamó
+                callback(farms)
+            }
+
+            // Este método se llama si la operación se cancela, por ejemplo, debido a un error
+            override fun onCancelled(error: DatabaseError) {
+                // Imprime un mensaje de error en los detalles del error
+                Log.i("Algo fallo", error.details)
+
+                // Llama al callback con un valor nulo para indicar que hubo un error
+                callback(null)
+            }
+        })
+    }
+
 
     fun setupDatabaseListener(postListener: ValueEventListener ){
         database.reference.addValueEventListener(postListener)
@@ -53,6 +88,12 @@ class FirebaseInstance(context: Context) {
     fun getCleanSnapshot(snapshot: DataSnapshot):List<Pair<String,User>>{
         val list = snapshot.children.map { user ->
             Pair(user.key!!,user.getValue(User::class.java)!!)
+        }
+        return list
+    }
+    fun getCleanSnapshotFarm(snapshot: DataSnapshot):List<Pair<String,Farm>>{
+        val list = snapshot.children.map { farm ->
+            Pair(farm.key!!,farm.getValue(Farm::class.java)!!)
         }
         return list
     }

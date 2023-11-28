@@ -3,6 +3,9 @@ package com.jpdev.proyectoganadero.ui.Farm.consult
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Adapter
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.jpdev.proyectoganadero.R
 import com.jpdev.proyectoganadero.data.network.FirebaseInstance
 import com.jpdev.proyectoganadero.databinding.ActivityFarmBinding
@@ -24,6 +27,16 @@ class FarmActivity : AppCompatActivity() {
         setContentView(binding.root)
         firebaseInstance = FirebaseInstance(this)
         var key = intent.extras?.getString("userKey")
+        key?.let {
+            firebaseInstance.getUserFarms(it) { farms ->
+                farms?.let {
+                    farmList.clear()
+                    farmList.addAll(farms)
+                    adapter.notifyDataSetChanged()
+                }
+            }
+        }
+        setUpRecyclerView()
         initListeners(key)
     }
 
@@ -33,7 +46,15 @@ class FarmActivity : AppCompatActivity() {
             intent.putExtra("userKey",key)
             startActivity(intent)
             finish()
+
         }
 
     }
+    private fun setUpRecyclerView(){
+        adapter = adapterFarm(farmList)
+        binding.rvFarm.adapter = adapter
+        binding.rvFarm.layoutManager = LinearLayoutManager(this)
+    }
+
+
 }
