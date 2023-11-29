@@ -61,6 +61,7 @@
     <string name="RegisterUser_Title">Registro De Usuario</string>
     <string name="User_ChangePassword">Cambiar mi contraseña</string>
     <string name="User_EditInfo">Editar mi información</string>
+    <string name="User_goToHomePage">Pagina Principal</string>
     <string name="gcm_defaultSenderId" translatable="false">235627218845</string>
     <string name="google_api_key" translatable="false">AIzaSyDJLGWJ5aACMG7T5WQyyJK6GVWUGU715Ow</string>
     <string name="google_app_id" translatable="false">1:235627218845:android:cb72ae7486e0d0f3e59174</string>

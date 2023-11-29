@@ -3212,6 +3212,7 @@ int id btnConsultUser 0x7f080068
 int id btnDelete 0x7f080069
 int id btnEdit 0x7f08006a
 int id btnEditInfo 0x7f08021c
+int id btnGoToHome 0x7f080220
 int id btnHomePage 0x7f08006b
 int id btnLogin 0x7f08006c
 int id btnPassRecord 0x7f08006d
@@ -3898,6 +3899,7 @@ int string RegisterUser_Security_Question 0x7f100029
 int string RegisterUser_Title 0x7f10002a
 int string User_ChangePassword 0x7f1000e2
 int string User_EditInfo 0x7f1000e3
+int string User_goToHomePage 0x7f1000e4
 int string abc_action_bar_home_description 0x7f10002b
 int string abc_action_bar_up_description 0x7f10002c
 int string abc_action_menu_overflow_description 0x7f10002d

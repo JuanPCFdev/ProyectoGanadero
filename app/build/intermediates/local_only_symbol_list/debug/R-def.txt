@@ -38,6 +38,7 @@ id btnConsultUser
 id btnDelete
 id btnEdit
 id btnEditInfo
+id btnGoToHome
 id btnHomePage
 id btnLogin
 id btnPassRecord
@@ -131,6 +132,7 @@ string RegisterUser_Security_Question
 string RegisterUser_Title
 string User_ChangePassword
 string User_EditInfo
+string User_goToHomePage
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id

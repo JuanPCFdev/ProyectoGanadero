@@ -2003,6 +2003,7 @@
     <string name="RegisterUser_Title">Registro De Usuario</string>
     <string name="User_ChangePassword">Cambiar mi contraseña</string>
     <string name="User_EditInfo">Editar mi información</string>
+    <string name="User_goToHomePage">Pagina Principal</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
     <string name="abc_action_menu_overflow_description">More options</string>

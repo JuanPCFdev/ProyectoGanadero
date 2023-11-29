@@ -84,7 +84,6 @@
         android:id="@+id/btnEditInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
         android:backgroundTint="@color/button_red"
         android:text="@string/User_EditInfo" />
 
@@ -92,13 +91,22 @@
         android:id="@+id/btnChangePassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         android:backgroundTint="@color/button_red"
         android:text="@string/User_ChangePassword" />
+
+    <Button
+        android:id="@+id/btnGoToHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/button_red"
+        android:text="@string/User_goToHomePage" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
         android:src="@drawable/cow_icon" />
 
 </LinearLayout>

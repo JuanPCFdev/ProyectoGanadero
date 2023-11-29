@@ -3213,6 +3213,7 @@ id btnConsultUser
 id btnDelete
 id btnEdit
 id btnEditInfo
+id btnGoToHome
 id btnHomePage
 id btnLogin
 id btnPassRecord
@@ -3899,6 +3900,7 @@ string RegisterUser_Security_Question
 string RegisterUser_Title
 string User_ChangePassword
 string User_EditInfo
+string User_goToHomePage
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

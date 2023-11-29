@@ -15,8 +15,11 @@
         android:theme="@style/Theme.ProyectoGanadero"
         tools:targetApi="31">
         <activity
+            android:name=".ui.Cow.Consult.ConsultCowsActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.User.Register.RegisterUserActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ui.Farm.deleteEdit.FarmEditDeleteActivity"
             android:exported="false" />
@@ -25,6 +28,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -39,13 +43,13 @@
             android:exported="false" />
         <activity
             android:name=".ui.Farm.consult.FarmActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ui.Home.HomePageActivity"
             android:exported="false" />
         <activity
             android:name=".ui.Farm.register.FarmRegisterActivity"
-            android:exported="false"/>
+            android:exported="false" />
     </application>
 
 </manifest>

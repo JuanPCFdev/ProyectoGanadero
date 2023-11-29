@@ -27,6 +27,9 @@ public final class ActivityUserBinding implements ViewBinding {
   public final Button btnEditInfo;
 
   @NonNull
+  public final Button btnGoToHome;
+
+  @NonNull
   public final TextView tvName;
 
   @NonNull
@@ -36,11 +39,12 @@ public final class ActivityUserBinding implements ViewBinding {
   public final TextView tvUserName;
 
   private ActivityUserBinding(@NonNull LinearLayout rootView, @NonNull Button btnChangePassword,
-      @NonNull Button btnEditInfo, @NonNull TextView tvName, @NonNull TextView tvPhone,
-      @NonNull TextView tvUserName) {
+      @NonNull Button btnEditInfo, @NonNull Button btnGoToHome, @NonNull TextView tvName,
+      @NonNull TextView tvPhone, @NonNull TextView tvUserName) {
     this.rootView = rootView;
     this.btnChangePassword = btnChangePassword;
     this.btnEditInfo = btnEditInfo;
+    this.btnGoToHome = btnGoToHome;
     this.tvName = tvName;
     this.tvPhone = tvPhone;
     this.tvUserName = tvUserName;
@@ -85,6 +89,12 @@ public final class ActivityUserBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnGoToHome;
+      Button btnGoToHome = ViewBindings.findChildViewById(rootView, id);
+      if (btnGoToHome == null) {
+        break missingId;
+      }
+
       id = R.id.tvName;
       TextView tvName = ViewBindings.findChildViewById(rootView, id);
       if (tvName == null) {
@@ -104,7 +114,7 @@ public final class ActivityUserBinding implements ViewBinding {
       }
 
       return new ActivityUserBinding((LinearLayout) rootView, btnChangePassword, btnEditInfo,
-          tvName, tvPhone, tvUserName);
+          btnGoToHome, tvName, tvPhone, tvUserName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
