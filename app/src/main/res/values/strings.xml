@@ -44,4 +44,5 @@
     <string name="Finance_description2">Los botones mostrados a continuación le permiten realizar el registro de un recibo de compra en caso de adquirir un nuevo producto o un recibo de venta en caso de vender ganado </string>
     <string name="User_EditInfo">Editar mi información</string>
     <string name="User_ChangePassword">Cambiar mi contraseña</string>
+    <string name="User_goToHomePage">Pagina Principal</string>
 </resources>

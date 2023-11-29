@@ -8,6 +8,7 @@ import com.jpdev.proyectoganadero.R
 import com.jpdev.proyectoganadero.data.network.FirebaseInstance
 import com.jpdev.proyectoganadero.databinding.ActivityUserBinding
 import com.jpdev.proyectoganadero.domain.model.User
+import com.jpdev.proyectoganadero.ui.Home.HomePageActivity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -24,17 +25,22 @@ class UserActivity : AppCompatActivity() {
 
         val key = intent.extras?.getString("userKey") //Este es el id del usuario
 
-        initListeners()
+        initListeners(key)
         getUserData(key)
-
     }
 
-    private fun initListeners(){
+    private fun initListeners(key: String?){
         binding.btnEditInfo.setOnClickListener {
             //Go to edit info
         }
         binding.btnChangePassword.setOnClickListener {
             //Go to change password
+        }
+        binding.btnGoToHome.setOnClickListener {
+            val intent = Intent(this,HomePageActivity::class.java)
+            intent.putExtra("userKey",key)
+            startActivity(intent)
+            finish()
         }
     }
 
