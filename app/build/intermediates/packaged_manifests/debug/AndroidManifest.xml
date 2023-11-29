@@ -36,6 +36,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.ProyectoGanadero" >
         <activity
+            android:name="com.jpdev.proyectoganadero.ui.Cow.Consult.ConsultCowsActivity"
+            android:exported="false" />
+        <activity
             android:name="com.jpdev.proyectoganadero.ui.User.Register.RegisterUserActivity"
             android:exported="false" />
         <activity

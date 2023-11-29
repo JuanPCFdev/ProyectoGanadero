@@ -12,6 +12,7 @@ import com.jpdev.proyectoganadero.databinding.ActivityFarmBinding
 import com.jpdev.proyectoganadero.domain.model.Farm
 import com.jpdev.proyectoganadero.ui.Farm.consult.adapterFarm.adapterFarm
 import com.jpdev.proyectoganadero.ui.Farm.register.FarmRegisterActivity
+import com.jpdev.proyectoganadero.ui.Home.HomePageActivity
 
 class FarmActivity : AppCompatActivity() {
 
@@ -26,7 +27,7 @@ class FarmActivity : AppCompatActivity() {
         binding = ActivityFarmBinding.inflate(layoutInflater)
         setContentView(binding.root)
         firebaseInstance = FirebaseInstance(this)
-        var key = intent.extras?.getString("userKey")
+        val key = intent.extras?.getString("userKey")
         key?.let {
             firebaseInstance.getUserFarms(it) { farms ->
                 farms?.let {
@@ -51,7 +52,12 @@ class FarmActivity : AppCompatActivity() {
 
     }
     private fun setUpRecyclerView(){
-        adapter = adapterFarm(farmList)
+        val key = intent.extras?.getString("userKey")
+        adapter = adapterFarm(farmList){ position ->
+            val intent = Intent(this, HomePageActivity::class.java)
+            intent.putExtra("userKey", key)
+            startActivity(intent)
+        }
         binding.rvFarm.adapter = adapter
         binding.rvFarm.layoutManager = LinearLayoutManager(this)
     }

@@ -8,7 +8,7 @@ import com.jpdev.proyectoganadero.domain.model.Farm
 class FarmViewHolder(view: View): RecyclerView.ViewHolder(view){
 
     private var binding = ItemFarmBinding.bind(view)
-    fun bind(farm: Farm){
+    fun bind(farm: Farm, position: Int){
         binding.tvFarm.text = farm.nameFarm
     }
 }

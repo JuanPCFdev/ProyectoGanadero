@@ -14,14 +14,16 @@ class HomePageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHomePageBinding.inflate(layoutInflater)
+        val key = intent.extras?.getString("userKey")
         setContentView(binding.root)
-        initListeners()
+        initListeners(key)
     }
 
-    private fun initListeners() {
-        val key = intent.extras?.getString("userKey")
+    private fun initListeners(key:String?) {
+
         binding.btnConsultFarm.setOnClickListener {
             val intent = Intent(this, FarmEditDeleteActivity::class.java)
+            intent.putExtra("userKey",key)
             startActivity(intent)
             finish()
         }
@@ -33,11 +35,13 @@ class HomePageActivity : AppCompatActivity() {
         }
         binding.btnConsultCow.setOnClickListener {
             val intent = Intent(this, CowActivity::class.java)
+            intent.putExtra("userKey",key)
             startActivity(intent)
             finish()
         }
         binding.btnConsultFinance.setOnClickListener {
             val intent = Intent(this, FinanceActivity::class.java)
+            intent.putExtra("userKey",key)
             startActivity(intent)
             finish()
         }

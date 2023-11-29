@@ -2998,7 +2998,9 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable consult_icon
 drawable cow_icon
+drawable delete_icon
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3218,6 +3220,7 @@ id btnHomePage
 id btnLogin
 id btnPassRecord
 id btnRegister
+id btnRegisterCow
 id btnRegisterFarm
 id btnReturnFarm
 id buttonPanel
@@ -3250,6 +3253,7 @@ id compras
 id compress
 id confirm_button
 id constraint
+id consult
 id container
 id content
 id contentPanel
@@ -3264,12 +3268,15 @@ id custom
 id customPanel
 id cut
 id cvFarm
+id cvHome
+id cvRecycler
 id dark
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id delete
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -3299,6 +3306,7 @@ id easeInOut
 id easeOut
 id east
 id edge
+id edit
 id edit_query
 id elastic
 id embed
@@ -3510,6 +3518,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rvCows
 id rvFarm
 id save_non_transition_alpha
 id save_overlay_view
@@ -3619,11 +3628,16 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvDescription
 id tvFarm
+id tvGender
+id tvMarking
 id tvName
 id tvPhone
+id tvRegisteredCows
 id tvTitle
 id tvUserName
+id tvWeight
 id unchecked
 id uniform
 id unlabeled
@@ -3764,6 +3778,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_consult_cows
 layout activity_cow
 layout activity_farm
 layout activity_farm_edit_delete
@@ -3789,6 +3804,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout item_cow
 layout item_farm
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -3855,6 +3871,12 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 raw firebase_common_keep
+string ConsultCows_Gender
+string ConsultCows_Marking
+string ConsultCows_Recomendation
+string ConsultCows_RegisterCow
+string ConsultCows_RegisteredCows
+string ConsultCows_Weight
 string FarmEditDelete_Delete
 string FarmEditDelete_Edit
 string FarmEditDelete_HomePage

@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
@@ -26,6 +27,9 @@ public final class ActivityFarmBinding implements ViewBinding {
   public final Button btnRegisterFarm;
 
   @NonNull
+  public final CardView cvHome;
+
+  @NonNull
   public final LinearLayout llfirst;
 
   @NonNull
@@ -35,9 +39,11 @@ public final class ActivityFarmBinding implements ViewBinding {
   public final TextView tvTitle;
 
   private ActivityFarmBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnRegisterFarm,
-      @NonNull LinearLayout llfirst, @NonNull RecyclerView rvFarm, @NonNull TextView tvTitle) {
+      @NonNull CardView cvHome, @NonNull LinearLayout llfirst, @NonNull RecyclerView rvFarm,
+      @NonNull TextView tvTitle) {
     this.rootView = rootView;
     this.btnRegisterFarm = btnRegisterFarm;
+    this.cvHome = cvHome;
     this.llfirst = llfirst;
     this.rvFarm = rvFarm;
     this.tvTitle = tvTitle;
@@ -76,6 +82,12 @@ public final class ActivityFarmBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.cvHome;
+      CardView cvHome = ViewBindings.findChildViewById(rootView, id);
+      if (cvHome == null) {
+        break missingId;
+      }
+
       id = R.id.llfirst;
       LinearLayout llfirst = ViewBindings.findChildViewById(rootView, id);
       if (llfirst == null) {
@@ -94,8 +106,8 @@ public final class ActivityFarmBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityFarmBinding((ConstraintLayout) rootView, btnRegisterFarm, llfirst, rvFarm,
-          tvTitle);
+      return new ActivityFarmBinding((ConstraintLayout) rootView, btnRegisterFarm, cvHome, llfirst,
+          rvFarm, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
