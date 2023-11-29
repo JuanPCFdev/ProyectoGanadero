@@ -8,26 +8,22 @@ import android.widget.Toast
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
-import com.jpdev.proyectoganadero.R
 import com.jpdev.proyectoganadero.data.network.FirebaseInstance
 import com.jpdev.proyectoganadero.databinding.ActivityFarmRegisterBinding
 import com.jpdev.proyectoganadero.domain.model.Cattle
 import com.jpdev.proyectoganadero.domain.model.Farm
 import com.jpdev.proyectoganadero.domain.model.Receipt
-import com.jpdev.proyectoganadero.domain.model.User
 import com.jpdev.proyectoganadero.ui.Farm.consult.FarmActivity
 
 class FarmRegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityFarmRegisterBinding
     private lateinit var firebaseInstance: FirebaseInstance
-    private lateinit var idFarm : List<Pair<String,Farm>>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityFarmRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
         firebaseInstance = FirebaseInstance(this)
-        getId()
         initListeners()
     }
     private fun initListeners(){
@@ -53,7 +49,6 @@ class FarmRegisterActivity : AppCompatActivity() {
         try {
             if(validateData()){
                 val newFarm = Farm(
-                    idFarm.size,
                     binding.etFarmName.text.toString(),
                     binding.etFarmHectares.text.toString().toDouble(),
                     binding.etFarmCapacity.text.toString().toInt(),
@@ -76,18 +71,6 @@ class FarmRegisterActivity : AppCompatActivity() {
         }
     }
 
-    private fun getId(){
-        val postListener = object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                val list = firebaseInstance.getCleanSnapshotFarm(snapshot)
-                idFarm = list
-            }
-            override fun onCancelled(error: DatabaseError) {
-                Log.i("Algo fallo :p", error.details)
-            }
-        }
-        firebaseInstance.setupDatabaseListener(postListener)
-    }
 
     private fun validateData():Boolean{
         var success = true

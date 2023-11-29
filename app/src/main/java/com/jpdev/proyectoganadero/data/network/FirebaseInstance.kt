@@ -73,6 +73,7 @@ class FirebaseInstance(context: Context) {
         }
     }
 
+
     fun getUserFarms(key: String?, callback: (List<Farm>?) -> Unit) {
         // Crea una referencia al nodo "farms" dentro del usuario identificado por "key"
         val userReference = myRef.child(key.toString()).child("farms")
@@ -87,6 +88,7 @@ class FirebaseInstance(context: Context) {
                 // Itera sobre los hijos (fincas) del nodo "farms"
                 for (farmSnapshot in snapshot.children) {
                     // Obtiene cada finca y la convierte a la clase Farm
+                    val farmKey = farmSnapshot.key
                     val farm = farmSnapshot.getValue(Farm::class.java)
 
                     // Añade la finca a la lista, si no es nula
@@ -119,12 +121,7 @@ class FirebaseInstance(context: Context) {
         }
         return list
     }
-    fun getCleanSnapshotFarm(snapshot: DataSnapshot):List<Pair<String,Farm>>{
-        val list = snapshot.children.map { farm ->
-            Pair(farm.key!!,farm.getValue(Farm::class.java)!!)
-        }
-        return list
-    }
+
     //Metodo para leer los objetos de la base de datos -> coroutine
     //Metodo para Editar un objeto de la base de datos
     //Metodo para Eliminar un objeto de la base de datos

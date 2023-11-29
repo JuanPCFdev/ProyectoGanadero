@@ -3,7 +3,6 @@ package com.jpdev.proyectoganadero.domain.model
 import com.google.gson.annotations.SerializedName
 
 data class Farm(
-    @SerializedName("idFarm") var idFarm:Int = 0,
     @SerializedName("nameFarm") var nameFarm:String = "",
     @SerializedName("hectares") var hectares: Double = 0.0,
     @SerializedName("numCows") var numCows: Int = 0,
