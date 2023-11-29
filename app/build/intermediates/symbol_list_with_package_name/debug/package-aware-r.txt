@@ -3205,12 +3205,14 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btnAlreadyRegistered
+id btnChangePassword
 id btnConsultCow
 id btnConsultFarm
 id btnConsultFinance
 id btnConsultUser
 id btnDelete
 id btnEdit
+id btnEditInfo
 id btnHomePage
 id btnLogin
 id btnPassRecord
@@ -3617,7 +3619,10 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvFarm
+id tvName
+id tvPhone
 id tvTitle
+id tvUserName
 id unchecked
 id uniform
 id unlabeled
@@ -3892,6 +3897,8 @@ string RegisterUser_Phone
 string RegisterUser_RecordPassword
 string RegisterUser_Security_Question
 string RegisterUser_Title
+string User_ChangePassword
+string User_EditInfo
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

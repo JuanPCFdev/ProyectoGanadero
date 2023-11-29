@@ -1,150 +1,154 @@
 [
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\layout_activity_home_page.xml.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\layout\\activity_home_page.xml"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/drawable_ic_user.xml.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/drawable/ic_user.xml"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/drawable_ic_password.xml.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/drawable/ic_password.xml"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\drawable_robot.png.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\drawable\\robot.png"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/layout_activity_home_page.xml.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_home_page.xml"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/drawable_robot.png.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/drawable/robot.png"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\layout_activity_log_in.xml.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\layout\\activity_log_in.xml"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/drawable_dinero_icon.png.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/drawable/dinero_icon.png"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\drawable_notificacion_icon.png.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\drawable\\notificacion_icon.png"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\drawable_dinero_icon.png.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\drawable\\dinero_icon.png"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/layout_activity_log_in.xml.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_log_in.xml"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/xml_data_extraction_rules.xml.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/xml_backup_rules.xml.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/layout_activity_register_user.xml.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_register_user.xml"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\drawable_user.png.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\drawable\\user.png"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\drawable_ayuda.png.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\drawable\\ayuda.png"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\layout_item_farm.xml.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\layout\\item_farm.xml"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\layout_activity_farm_register.xml.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\layout\\activity_farm_register.xml"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/layout_item_farm.xml.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/layout/item_farm.xml"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\layout_activity_finance.xml.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\layout\\activity_finance.xml"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\drawable_finca.png.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\drawable\\finca.png"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/drawable_ayuda.png.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/drawable/ayuda.png"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/drawable_notificacion_icon.png.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/drawable/notificacion_icon.png"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\drawable_ic_password.xml.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\drawable\\ic_password.xml"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/layout_activity_farm_register.xml.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_farm_register.xml"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/layout_activity_farm_edit_delete.xml.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_farm_edit_delete.xml"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\layout_activity_farm_edit_delete.xml.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\layout\\activity_farm_edit_delete.xml"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/drawable_cow_icon.png.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/drawable/cow_icon.png"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/drawable_user.png.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/drawable/user.png"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\drawable_ic_user.xml.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\drawable\\ic_user.xml"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/layout_activity_cow.xml.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_cow.xml"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\layout_activity_register_user.xml.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\layout\\activity_register_user.xml"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/drawable/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\layout_activity_user.xml.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\layout\\activity_user.xml"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/layout_activity_finance.xml.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_finance.xml"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/drawable_finca.png.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/drawable/finca.png"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\drawable_edit_icon.xml.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\drawable\\edit_icon.xml"
     },
     {
         "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/layout_activity_user.xml.flat",
         "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_user.xml"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\layout_activity_cow.xml.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\layout\\activity_cow.xml"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/drawable_vacuna_icon.png.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/drawable/vacuna_icon.png"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\drawable_vacuna_icon.png.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\drawable\\vacuna_icon.png"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/drawable_edit_icon.xml.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/drawable/edit_icon.xml"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\drawable_cow_icon.png.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\drawable\\cow_icon.png"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-merged_res-45:/layout_activity_farm.xml.flat",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_farm.xml"
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-merged_res-45:\\layout_activity_farm.xml.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\8.0\\com.jpdev.proyectoganadero.app-main-47:\\layout\\activity_farm.xml"
     }
 ]

@@ -8,8 +8,13 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.database
+import com.google.firebase.database.getValue
+import com.google.firebase.database.values
 import com.jpdev.proyectoganadero.domain.model.Farm
 import com.jpdev.proyectoganadero.domain.model.User
+import kotlinx.coroutines.suspendCancellableCoroutine
+import kotlin.coroutines.resume
+import kotlin.coroutines.resumeWithException
 
 class FirebaseInstance(context: Context) {
 
@@ -45,6 +50,29 @@ class FirebaseInstance(context: Context) {
             }
         })
     }
+
+    suspend fun getUser(key:String?):User? = suspendCancellableCoroutine {
+        val userRef = myRef.child(key.toString())
+
+        val valueEventListener = object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                val user = snapshot.getValue(User::class.java)
+                it.resume(user)
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                it.resumeWithException(error.toException())
+            }
+
+        }
+
+        userRef.addListenerForSingleValueEvent(valueEventListener)
+
+        it.invokeOnCancellation {
+            userRef.removeEventListener(valueEventListener)
+        }
+    }
+
     fun getUserFarms(key: String?, callback: (List<Farm>?) -> Unit) {
         // Crea una referencia al nodo "farms" dentro del usuario identificado por "key"
         val userReference = myRef.child(key.toString()).child("farms")

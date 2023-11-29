@@ -3204,12 +3204,14 @@ int id bounceBoth 0x7f080061
 int id bounceEnd 0x7f080062
 int id bounceStart 0x7f080063
 int id btnAlreadyRegistered 0x7f080064
+int id btnChangePassword 0x7f08021b
 int id btnConsultCow 0x7f080065
 int id btnConsultFarm 0x7f080066
 int id btnConsultFinance 0x7f080067
 int id btnConsultUser 0x7f080068
 int id btnDelete 0x7f080069
 int id btnEdit 0x7f08006a
+int id btnEditInfo 0x7f08021c
 int id btnHomePage 0x7f08006b
 int id btnLogin 0x7f08006c
 int id btnPassRecord 0x7f08006d
@@ -3616,7 +3618,10 @@ int id transition_scene_layoutid_cache 0x7f0801fd
 int id transition_transform 0x7f0801fe
 int id triangle 0x7f0801ff
 int id tvFarm 0x7f080200
+int id tvName 0x7f08021d
+int id tvPhone 0x7f08021e
 int id tvTitle 0x7f080201
+int id tvUserName 0x7f08021f
 int id unchecked 0x7f080202
 int id uniform 0x7f080203
 int id unlabeled 0x7f080204
@@ -3891,6 +3896,8 @@ int string RegisterUser_Phone 0x7f100027
 int string RegisterUser_RecordPassword 0x7f100028
 int string RegisterUser_Security_Question 0x7f100029
 int string RegisterUser_Title 0x7f10002a
+int string User_ChangePassword 0x7f1000e2
+int string User_EditInfo 0x7f1000e3
 int string abc_action_bar_home_description 0x7f10002b
 int string abc_action_bar_up_description 0x7f10002c
 int string abc_action_menu_overflow_description 0x7f10002d

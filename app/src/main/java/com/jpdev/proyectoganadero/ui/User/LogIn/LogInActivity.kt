@@ -86,7 +86,7 @@ class LogInActivity : AppCompatActivity() {
     }
 
     private fun HomePage(key:String){
-        val intent = Intent(this,FarmActivity::class.java)
+        val intent = Intent(this,HomePageActivity::class.java)
         intent.putExtra("userKey",key)
         startActivity(intent)
         finish()

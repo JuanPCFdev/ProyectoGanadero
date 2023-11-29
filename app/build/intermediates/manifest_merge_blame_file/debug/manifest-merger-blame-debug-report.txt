@@ -107,8 +107,8 @@
 58-->C:\Users\USER\AndroidStudioProjects\ProyectoGanadero\app\src\main\AndroidManifest.xml:36:13-37
 59        <activity
 59-->C:\Users\USER\AndroidStudioProjects\ProyectoGanadero\app\src\main\AndroidManifest.xml:37:9-39:40
-60            android:name="com.jpdev.proyectoganadero.ui.User.UserActivity"
-60-->C:\Users\USER\AndroidStudioProjects\ProyectoGanadero\app\src\main\AndroidManifest.xml:38:13-49
+60            android:name="com.jpdev.proyectoganadero.ui.User.Consult.UserActivity"
+60-->C:\Users\USER\AndroidStudioProjects\ProyectoGanadero\app\src\main\AndroidManifest.xml:38:13-57
 61            android:exported="false" />
 61-->C:\Users\USER\AndroidStudioProjects\ProyectoGanadero\app\src\main\AndroidManifest.xml:39:13-37
 62        <activity

@@ -57,7 +57,7 @@
             android:name="com.jpdev.proyectoganadero.ui.Cow.CowActivity"
             android:exported="false" />
         <activity
-            android:name="com.jpdev.proyectoganadero.ui.User.UserActivity"
+            android:name="com.jpdev.proyectoganadero.ui.User.Consult.UserActivity"
             android:exported="false" />
         <activity
             android:name="com.jpdev.proyectoganadero.ui.Farm.consult.FarmActivity"

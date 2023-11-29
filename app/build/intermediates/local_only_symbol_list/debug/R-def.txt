@@ -30,12 +30,14 @@ drawable robot
 drawable user
 drawable vacuna_icon
 id btnAlreadyRegistered
+id btnChangePassword
 id btnConsultCow
 id btnConsultFarm
 id btnConsultFinance
 id btnConsultUser
 id btnDelete
 id btnEdit
+id btnEditInfo
 id btnHomePage
 id btnLogin
 id btnPassRecord
@@ -67,7 +69,10 @@ id rvFarm
 id title
 id titleHomePage
 id tvFarm
+id tvName
+id tvPhone
 id tvTitle
+id tvUserName
 id ventas
 layout activity_cow
 layout activity_farm
@@ -124,6 +129,8 @@ string RegisterUser_Phone
 string RegisterUser_RecordPassword
 string RegisterUser_Security_Question
 string RegisterUser_Title
+string User_ChangePassword
+string User_EditInfo
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id

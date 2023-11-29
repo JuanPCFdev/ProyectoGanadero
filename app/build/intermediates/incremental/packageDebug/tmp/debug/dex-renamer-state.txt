@@ -1,4 +1,4 @@
-#Tue Nov 28 18:45:53 COT 2023
+#Tue Nov 28 22:48:10 COT 2023
 base.0=C\:\\Users\\USER\\AndroidStudioProjects\\ProyectoGanadero\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\USER\\AndroidStudioProjects\\ProyectoGanadero\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.10=C\:\\Users\\USER\\AndroidStudioProjects\\ProyectoGanadero\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
@@ -8,7 +8,7 @@ base.4=C\:\\Users\\USER\\AndroidStudioProjects\\ProyectoGanadero\\app\\build\\in
 base.5=C\:\\Users\\USER\\AndroidStudioProjects\\ProyectoGanadero\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
 base.6=C\:\\Users\\USER\\AndroidStudioProjects\\ProyectoGanadero\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
 base.7=C\:\\Users\\USER\\AndroidStudioProjects\\ProyectoGanadero\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
-base.8=C\:\\Users\\USER\\AndroidStudioProjects\\ProyectoGanadero\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
+base.8=C\:\\Users\\USER\\AndroidStudioProjects\\ProyectoGanadero\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
 base.9=C\:\\Users\\USER\\AndroidStudioProjects\\ProyectoGanadero\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
@@ -19,7 +19,7 @@ path.4=13/classes.dex
 path.5=14/classes.dex
 path.6=2/classes.dex
 path.7=3/classes.dex
-path.8=4/classes.dex
+path.8=15/classes.dex
 path.9=6/classes.dex
 renamed.0=classes.dex
 renamed.1=classes2.dex

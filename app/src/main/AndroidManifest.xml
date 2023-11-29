@@ -35,7 +35,7 @@
             android:name=".ui.Cow.CowActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.User.UserActivity"
+            android:name=".ui.User.Consult.UserActivity"
             android:exported="false" />
         <activity
             android:name=".ui.Farm.consult.FarmActivity"
