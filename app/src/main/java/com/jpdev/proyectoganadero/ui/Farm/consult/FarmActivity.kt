@@ -18,6 +18,7 @@ class FarmActivity : AppCompatActivity() {
 
     private lateinit var adapter : adapterFarm
     private var farmList = mutableListOf<Farm>()
+    private var farmKeys = mutableListOf<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,14 +27,19 @@ class FarmActivity : AppCompatActivity() {
         firebaseInstance = FirebaseInstance(this)
         val key = intent.extras?.getString("userKey")
         key?.let {
-            firebaseInstance.getUserFarms(it) { farms ->
+            firebaseInstance.getUserFarms(it) { farms, keys ->
                 farms?.let {
                     farmList.clear()
                     farmList.addAll(farms)
+                    keys?.let {
+                        farmKeys.clear()
+                        farmKeys.addAll(keys)
+                    }
                     adapter.notifyDataSetChanged()
                 }
             }
         }
+
         setUpRecyclerView()
         initListeners(key)
     }
@@ -44,17 +50,11 @@ class FarmActivity : AppCompatActivity() {
             intent.putExtra("userKey",key)
             startActivity(intent)
             finish()
-
         }
-
     }
     private fun setUpRecyclerView(){
         val key = intent.extras?.getString("userKey")
-        adapter = adapterFarm(farmList){ position ->
-            val intent = Intent(this, HomePageActivity::class.java)
-            intent.putExtra("userKey", key)
-            startActivity(intent)
-        }
+        adapter = adapterFarm(farmList,farmKeys,key.toString())
         binding.rvFarm.adapter = adapter
         binding.rvFarm.layoutManager = LinearLayoutManager(this)
     }

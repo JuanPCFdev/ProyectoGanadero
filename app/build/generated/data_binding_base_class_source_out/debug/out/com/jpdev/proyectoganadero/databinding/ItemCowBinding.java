@@ -24,6 +24,9 @@ public final class ItemCowBinding implements ViewBinding {
   public final ImageView consult;
 
   @NonNull
+  public final CardView cvCow;
+
+  @NonNull
   public final ImageView delete;
 
   @NonNull
@@ -39,10 +42,11 @@ public final class ItemCowBinding implements ViewBinding {
   public final TextView tvWeight;
 
   private ItemCowBinding(@NonNull CardView rootView, @NonNull ImageView consult,
-      @NonNull ImageView delete, @NonNull ImageView edit, @NonNull TextView tvGender,
-      @NonNull TextView tvMarking, @NonNull TextView tvWeight) {
+      @NonNull CardView cvCow, @NonNull ImageView delete, @NonNull ImageView edit,
+      @NonNull TextView tvGender, @NonNull TextView tvMarking, @NonNull TextView tvWeight) {
     this.rootView = rootView;
     this.consult = consult;
+    this.cvCow = cvCow;
     this.delete = delete;
     this.edit = edit;
     this.tvGender = tvGender;
@@ -83,6 +87,8 @@ public final class ItemCowBinding implements ViewBinding {
         break missingId;
       }
 
+      CardView cvCow = (CardView) rootView;
+
       id = R.id.delete;
       ImageView delete = ViewBindings.findChildViewById(rootView, id);
       if (delete == null) {
@@ -113,8 +119,8 @@ public final class ItemCowBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemCowBinding((CardView) rootView, consult, delete, edit, tvGender, tvMarking,
-          tvWeight);
+      return new ItemCowBinding((CardView) rootView, consult, cvCow, delete, edit, tvGender,
+          tvMarking, tvWeight);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -53,6 +53,7 @@ id cardRegister
 id carta
 id compras
 id consult
+id cvCow
 id cvFarm
 id cvHome
 id cvRecycler

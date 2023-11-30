@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.jpdev.proyectoganadero.R
 import com.jpdev.proyectoganadero.domain.model.Farm
 
-class adapterFarm (val Farm : List<Farm>, private val onFarmSelected: (Int) -> Unit):
+class adapterFarm (val Farm : List<Farm>,val Keys: List<String>,val userKey:String):
     RecyclerView.Adapter<FarmViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FarmViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
@@ -17,8 +17,9 @@ class adapterFarm (val Farm : List<Farm>, private val onFarmSelected: (Int) -> U
 
     override fun onBindViewHolder(holder: FarmViewHolder, position: Int) {
         val item = Farm[position]
-        holder.bind(item, position)
-        holder.itemView.setOnClickListener { onFarmSelected(position) }
+        val key = Keys[position]
+        val user = userKey
+        holder.bind(item,key,user)
     }
 
 }

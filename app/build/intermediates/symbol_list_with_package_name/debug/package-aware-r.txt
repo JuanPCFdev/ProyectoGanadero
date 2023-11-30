@@ -3267,6 +3267,7 @@ id currentState
 id custom
 id customPanel
 id cut
+id cvCow
 id cvFarm
 id cvHome
 id cvRecycler

@@ -8,8 +8,6 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.database
-import com.google.firebase.database.getValue
-import com.google.firebase.database.values
 import com.jpdev.proyectoganadero.domain.model.Farm
 import com.jpdev.proyectoganadero.domain.model.User
 import kotlinx.coroutines.suspendCancellableCoroutine
@@ -74,7 +72,7 @@ class FirebaseInstance(context: Context) {
     }
 
 
-    fun getUserFarms(key: String?, callback: (List<Farm>?) -> Unit) {
+    fun getUserFarms(key: String?, callback: (List<Farm>?,List<String>?) -> Unit) {
         // Crea una referencia al nodo "farms" dentro del usuario identificado por "key"
         val userReference = myRef.child(key.toString()).child("farms")
 
@@ -84,19 +82,22 @@ class FirebaseInstance(context: Context) {
             override fun onDataChange(snapshot: DataSnapshot) {
                 // Crea una lista mutable para almacenar las fincas del usuario
                 val farms = mutableListOf<Farm>()
+                val farmKeys = mutableListOf<String>()
 
                 // Itera sobre los hijos (fincas) del nodo "farms"
                 for (farmSnapshot in snapshot.children) {
                     // Obtiene cada finca y la convierte a la clase Farm
-                    val farmKey = farmSnapshot.key
+                    val key = farmSnapshot.key.toString()
                     val farm = farmSnapshot.getValue(Farm::class.java)
 
-                    // Añade la finca a la lista, si no es nula
-                    farm?.let { farms.add(it) }
+                    if(farm != null && key != null){
+                        farms.add(farm)
+                        farmKeys.add(key)
+                    }
                 }
 
                 // Llama al callback proporcionando la lista de fincas al código que lo llamó
-                callback(farms)
+                callback(farms, farmKeys)
             }
 
             // Este método se llama si la operación se cancela, por ejemplo, debido a un error
@@ -105,11 +106,10 @@ class FirebaseInstance(context: Context) {
                 Log.i("Algo fallo", error.details)
 
                 // Llama al callback con un valor nulo para indicar que hubo un error
-                callback(null)
+                callback(null,null)
             }
         })
     }
-
 
     fun setupDatabaseListener(postListener: ValueEventListener ){
         database.reference.addValueEventListener(postListener)
@@ -120,6 +120,27 @@ class FirebaseInstance(context: Context) {
             Pair(user.key!!,user.getValue(User::class.java)!!)
         }
         return list
+    }
+
+    fun getFarmDetails(userKey: String, farmKey: String, callback: (Farm?) -> Unit) {
+        val userRef = myRef.child(userKey).child("farms").child(farmKey)
+        // Agrega un listener para obtener los detalles de la granja
+        userRef.addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                // Verifica si existe la información de la granja
+                if (snapshot.exists()) {
+                    val farm: Farm? = snapshot.getValue(Farm::class.java)
+                    callback(farm)
+                } else {
+                    callback(null)
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                // Manejar la cancelación, por ejemplo, mostrando un mensaje de error
+                callback(null)
+            }
+        })
     }
 
     //Metodo para leer los objetos de la base de datos -> coroutine
