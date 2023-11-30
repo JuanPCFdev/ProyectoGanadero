@@ -41,7 +41,7 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text="@string/Finance_description"
-                    android:textSize="18dp" />
+                    android:textSize="18sp" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -54,16 +54,16 @@
                         android:id="@+id/ganancias"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:backgroundTint="@color/button_red"
+                        android:backgroundTint="@android:color/transparent"
                         android:layout_marginHorizontal="16dp"
-                        android:text="@string/Finance_earnings" />
+                        tools:text="@string/Finance_earnings" />
 
                     <Button
                         android:id="@+id/perdidas"
-                        android:backgroundTint="@color/button_red"
+                        android:backgroundTint="@android:color/transparent"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/Finance_lost" />
+                        tools:text="@string/Finance_lost" />
 
                 </LinearLayout>
 
