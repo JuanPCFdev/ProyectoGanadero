@@ -31,10 +31,10 @@ class FirebaseInstance(context: Context) {
 
 
     // Método para registrar una finca
-    fun registerFarm(farm: Farm, key: String?) {
-        val userReference = myRef.child(key.toString())
 
-        userReference.addListenerForSingleValueEvent(object : ValueEventListener {
+    fun registerFarm(farm: Farm, key: String?){
+        val userReference = myRef.child(key.toString())
+            userReference.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 if (snapshot.exists()) {
                     val existingUser = snapshot.getValue(User::class.java)
@@ -48,6 +48,55 @@ class FirebaseInstance(context: Context) {
             }
         })
     }
+    fun editFarm(farm: Farm, key: String?, farmKey: String?) {
+        if (key != null && farmKey != null) {
+            val userReference = myRef.child(key)
+
+            userReference.addListenerForSingleValueEvent(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    if (snapshot.exists()) {
+                        val existingUser = snapshot.getValue(User::class.java)
+
+                        existingUser?.farms?.get(farmKey.toInt())?.apply {
+                            this.nameFarm = farm.nameFarm
+                            this.hectares = farm.hectares
+                            this.numCows = farm.numCows
+                            this.address = farm.address
+                        }
+
+                        userReference.setValue(existingUser)
+                    }
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                    Log.i("Algo fallo", error.details)
+                }
+            })
+        }
+    }
+    fun deleteFarm(key: String?, farmKey: String?) {
+        if (key != null && farmKey != null) {
+            val userReference = myRef.child(key)
+
+            userReference.addListenerForSingleValueEvent(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    if (snapshot.exists()) {
+                        val existingUser = snapshot.getValue(User::class.java)
+
+                        // Eliminar la finca con la farmKey específica
+                        existingUser?.farms?.removeAt(farmKey.toInt())
+
+                        userReference.setValue(existingUser)
+                    }
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                    Log.i("Algo fallo", error.details)
+                }
+            })
+        }
+    }
+
 
     suspend fun getUser(key:String?):User? = suspendCancellableCoroutine {
         val userRef = myRef.child(key.toString())
