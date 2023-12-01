@@ -4,7 +4,6 @@ package com.jpdev.proyectoganadero.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,16 +20,7 @@ public final class ItemCowBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
-  public final ImageView consult;
-
-  @NonNull
   public final CardView cvCow;
-
-  @NonNull
-  public final ImageView delete;
-
-  @NonNull
-  public final ImageView edit;
 
   @NonNull
   public final TextView tvGender;
@@ -41,14 +31,10 @@ public final class ItemCowBinding implements ViewBinding {
   @NonNull
   public final TextView tvWeight;
 
-  private ItemCowBinding(@NonNull CardView rootView, @NonNull ImageView consult,
-      @NonNull CardView cvCow, @NonNull ImageView delete, @NonNull ImageView edit,
+  private ItemCowBinding(@NonNull CardView rootView, @NonNull CardView cvCow,
       @NonNull TextView tvGender, @NonNull TextView tvMarking, @NonNull TextView tvWeight) {
     this.rootView = rootView;
-    this.consult = consult;
     this.cvCow = cvCow;
-    this.delete = delete;
-    this.edit = edit;
     this.tvGender = tvGender;
     this.tvMarking = tvMarking;
     this.tvWeight = tvWeight;
@@ -81,25 +67,7 @@ public final class ItemCowBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.consult;
-      ImageView consult = ViewBindings.findChildViewById(rootView, id);
-      if (consult == null) {
-        break missingId;
-      }
-
       CardView cvCow = (CardView) rootView;
-
-      id = R.id.delete;
-      ImageView delete = ViewBindings.findChildViewById(rootView, id);
-      if (delete == null) {
-        break missingId;
-      }
-
-      id = R.id.edit;
-      ImageView edit = ViewBindings.findChildViewById(rootView, id);
-      if (edit == null) {
-        break missingId;
-      }
 
       id = R.id.tvGender;
       TextView tvGender = ViewBindings.findChildViewById(rootView, id);
@@ -119,8 +87,7 @@ public final class ItemCowBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemCowBinding((CardView) rootView, consult, cvCow, delete, edit, tvGender,
-          tvMarking, tvWeight);
+      return new ItemCowBinding((CardView) rootView, cvCow, tvGender, tvMarking, tvWeight);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -51,6 +51,14 @@
     <string name="ConsultCows_Marking">Marcacion</string>
     <string name="ConsultCows_Weight">Peso</string>
     <string name="ConsultCows_Gender">Genero</string>
+    <string name="RegisterCow_Title">Registrar Ganado de Levante</string>
+    <string name="RegisterCow_Marking">Marcación</string>
+    <string name="RegisterCow_Birthday">Fecha Nacimiento</string>
+    <string name="RegisterCow_Age">Edad</string>
+    <string name="RegisterCow_Breed">Raza</string>
+    <string name="RegisterCow_State">Estado</string>
+    <string name="RegisterCow_Type">Tipo</string>
+    <string name="RegisterCow_Cost">Costo</string>
     <string name="Buy_title">Recibo de compra</string>
     <string name="Buy_description">Aqui podra añadir los insumos que compro para su finca, si lo que desea es crear un recibo de compra de ganado seleccione el boton</string>
     <string name="Buy_name">Nombre del producto</string>
@@ -70,4 +78,7 @@
     <string name="SellCow_NameBuyer">Nombre del comprador</string>
     <string name="SellCow_TelBuyer">Telefono del comprador</string>
     <string name="SellCow_Save">Guardar recibo de venta</string>
+
+
+
 </resources>

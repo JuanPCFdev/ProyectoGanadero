@@ -23,13 +23,14 @@ class UserActivity : AppCompatActivity() {
         setContentView(binding.root)
         firebaseInstance = FirebaseInstance(this)
 
-        val key = intent.extras?.getString("userKey") //Este es el id del usuario
+        val key = intent.extras?.getString("userKey")
+        val keyFarm = intent.extras?.getString("farmKey")
 
-        initListeners(key)
+        initListeners(key,keyFarm)
         getUserData(key)
     }
 
-    private fun initListeners(key: String?){
+    private fun initListeners(key: String?,keyFarm:String?){
         binding.btnEditInfo.setOnClickListener {
             //Go to edit info
         }
@@ -39,6 +40,7 @@ class UserActivity : AppCompatActivity() {
         binding.btnGoToHome.setOnClickListener {
             val intent = Intent(this,HomePageActivity::class.java)
             intent.putExtra("userKey",key)
+            intent.putExtra("farmKey",keyFarm)
             startActivity(intent)
             finish()
         }

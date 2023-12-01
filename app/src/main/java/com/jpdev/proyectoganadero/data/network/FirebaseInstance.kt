@@ -8,6 +8,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.database
+import com.jpdev.proyectoganadero.domain.model.Cattle
 import com.jpdev.proyectoganadero.domain.model.Farm
 import com.jpdev.proyectoganadero.domain.model.User
 import kotlinx.coroutines.suspendCancellableCoroutine
@@ -24,17 +25,16 @@ class FirebaseInstance(context: Context) {
     }
 
     //Metodos para escribir un objeto en la base de datos
-    fun writeOnFirebase(user:User){
+    fun writeOnFirebase(user: User) {
         val newUser = myRef.push()
         newUser.setValue(user)
     }
 
-
     // Método para registrar una finca
-
-    fun registerFarm(farm: Farm, key: String?){
+    fun registerFarm(farm: Farm, key: String?) {
         val userReference = myRef.child(key.toString())
-            userReference.addListenerForSingleValueEvent(object : ValueEventListener {
+
+        userReference.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 if (snapshot.exists()) {
                     val existingUser = snapshot.getValue(User::class.java)
@@ -48,6 +48,7 @@ class FirebaseInstance(context: Context) {
             }
         })
     }
+
     fun editFarm(farm: Farm, key: String?, farmKey: String?) {
         if (key != null && farmKey != null) {
             val userReference = myRef.child(key)
@@ -74,6 +75,7 @@ class FirebaseInstance(context: Context) {
             })
         }
     }
+
     fun deleteFarm(key: String?, farmKey: String?) {
         if (key != null && farmKey != null) {
             val userReference = myRef.child(key)
@@ -97,8 +99,7 @@ class FirebaseInstance(context: Context) {
         }
     }
 
-
-    suspend fun getUser(key:String?):User? = suspendCancellableCoroutine {
+    suspend fun getUser(key: String?): User? = suspendCancellableCoroutine {
         val userRef = myRef.child(key.toString())
 
         val valueEventListener = object : ValueEventListener {
@@ -120,8 +121,7 @@ class FirebaseInstance(context: Context) {
         }
     }
 
-
-    fun getUserFarms(key: String?, callback: (List<Farm>?,List<String>?) -> Unit) {
+    fun getUserFarms(key: String?, callback: (List<Farm>?, List<String>?) -> Unit) {
         // Crea una referencia al nodo "farms" dentro del usuario identificado por "key"
         val userReference = myRef.child(key.toString()).child("farms")
 
@@ -139,7 +139,7 @@ class FirebaseInstance(context: Context) {
                     val key = farmSnapshot.key.toString()
                     val farm = farmSnapshot.getValue(Farm::class.java)
 
-                    if(farm != null && key != null){
+                    if (farm != null && key != null) {
                         farms.add(farm)
                         farmKeys.add(key)
                     }
@@ -155,18 +155,18 @@ class FirebaseInstance(context: Context) {
                 Log.i("Algo fallo", error.details)
 
                 // Llama al callback con un valor nulo para indicar que hubo un error
-                callback(null,null)
+                callback(null, null)
             }
         })
     }
 
-    fun setupDatabaseListener(postListener: ValueEventListener ){
+    fun setupDatabaseListener(postListener: ValueEventListener) {
         database.reference.addValueEventListener(postListener)
     }
 
-    fun getCleanSnapshot(snapshot: DataSnapshot):List<Pair<String,User>>{
+    fun getCleanSnapshot(snapshot: DataSnapshot): List<Pair<String, User>> {
         val list = snapshot.children.map { user ->
-            Pair(user.key!!,user.getValue(User::class.java)!!)
+            Pair(user.key!!, user.getValue(User::class.java)!!)
         }
         return list
     }
@@ -192,9 +192,58 @@ class FirebaseInstance(context: Context) {
         })
     }
 
-    //Metodo para leer los objetos de la base de datos -> coroutine
-    //Metodo para Editar un objeto de la base de datos
-    //Metodo para Eliminar un objeto de la base de datos
-    //Metodo para Registrar algo en la base de datos
+    fun getUserCows(
+        user: String?,
+        farmKey: String?,
+        callback: (List<Cattle>?, List<String>?) -> Unit
+    ) {
 
+        val userReference = myRef.child(user.toString()).child("farms")
+            .child(farmKey.toString())
+            .child("cattles")
+
+        userReference.addListenerForSingleValueEvent(object : ValueEventListener {
+
+            override fun onDataChange(snapshot: DataSnapshot) {
+
+                val cows = mutableListOf<Cattle>()
+                val cowsKeys = mutableListOf<String>()
+
+                for (cowSnapshot in snapshot.children) {
+                    // Obtiene cada finca y la convierte a la clase Farm
+                    val key = cowSnapshot.key.toString()
+                    val cow = cowSnapshot.getValue(Cattle::class.java)
+
+                    if (cow != null && key != null) {
+                        cows.add(cow)
+                        cowsKeys.add(key)
+                    }
+                }
+                callback(cows, cowsKeys)
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                Log.i("Algo fallo", error.details)
+                callback(null, null)
+            }
+        })
+    }
+
+    fun registerCow(cow: Cattle, user: String?, farm: String?) {
+        val userReference = myRef.child(user.toString())
+
+        userReference.addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                if (snapshot.exists()) {
+                    val existingUser = snapshot.getValue(User::class.java)
+                    existingUser?.farms?.get(farm.toString().toInt())?.cattles?.add(cow)
+                    userReference.setValue(existingUser)
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                Log.i("Algo fallo", error.details)
+            }
+        })
+    }
 }

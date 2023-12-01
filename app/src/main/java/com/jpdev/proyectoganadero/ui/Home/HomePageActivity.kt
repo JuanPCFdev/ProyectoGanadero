@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.jpdev.proyectoganadero.data.network.FirebaseInstance
 import com.jpdev.proyectoganadero.databinding.ActivityHomePageBinding
-import com.jpdev.proyectoganadero.ui.Cow.CowActivity
+import com.jpdev.proyectoganadero.ui.Cow.Consult.ConsultCowsActivity
 import com.jpdev.proyectoganadero.ui.Farm.deleteEdit.FarmEditDeleteActivity
 import com.jpdev.proyectoganadero.ui.Finance.FinanceActivity
 import com.jpdev.proyectoganadero.ui.User.Consult.UserActivity
@@ -47,7 +47,7 @@ class HomePageActivity : AppCompatActivity() {
             finish()
         }
         binding.btnConsultCow.setOnClickListener {
-            val intent = Intent(this, CowActivity::class.java)
+            val intent = Intent(this, ConsultCowsActivity::class.java)
             intent.putExtra("userKey",key)
             intent.putExtra("farmKey",farmKey)
             startActivity(intent)

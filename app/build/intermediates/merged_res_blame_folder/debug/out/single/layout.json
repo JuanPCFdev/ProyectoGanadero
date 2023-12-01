@@ -8,8 +8,16 @@
         "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_user.xml"
     },
     {
+        "merged": "com.jpdev.proyectoganadero.app-mergeDebugResources-44:/layout/activity_receipt_history.xml",
+        "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_receipt_history.xml"
+    },
+    {
         "merged": "com.jpdev.proyectoganadero.app-mergeDebugResources-44:/layout/activity_home_page.xml",
         "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_home_page.xml"
+    },
+    {
+        "merged": "com.jpdev.proyectoganadero.app-mergeDebugResources-44:/layout/activity_buy.xml",
+        "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_buy.xml"
     },
     {
         "merged": "com.jpdev.proyectoganadero.app-mergeDebugResources-44:/layout/activity_log_in.xml",
@@ -40,11 +48,15 @@
         "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_farm_edit_delete.xml"
     },
     {
+        "merged": "com.jpdev.proyectoganadero.app-mergeDebugResources-44:/layout/activity_sell_cow.xml",
+        "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_sell_cow.xml"
+    },
+    {
         "merged": "com.jpdev.proyectoganadero.app-mergeDebugResources-44:/layout/activity_farm.xml",
         "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_farm.xml"
     },
     {
-        "merged": "com.jpdev.proyectoganadero.app-mergeDebugResources-44:/layout/activity_cow.xml",
-        "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_cow.xml"
+        "merged": "com.jpdev.proyectoganadero.app-mergeDebugResources-44:/layout/activity_register_cow.xml",
+        "source": "com.jpdev.proyectoganadero.app-main-47:/layout/activity_register_cow.xml"
     }
 ]

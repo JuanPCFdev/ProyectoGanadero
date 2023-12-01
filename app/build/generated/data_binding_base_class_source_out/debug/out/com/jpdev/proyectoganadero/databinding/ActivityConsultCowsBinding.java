@@ -23,6 +23,9 @@ public final class ActivityConsultCowsBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final Button btnHome;
+
+  @NonNull
   public final Button btnRegisterCow;
 
   @NonNull
@@ -37,10 +40,11 @@ public final class ActivityConsultCowsBinding implements ViewBinding {
   @NonNull
   public final TextView tvRegisteredCows;
 
-  private ActivityConsultCowsBinding(@NonNull ConstraintLayout rootView,
+  private ActivityConsultCowsBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnHome,
       @NonNull Button btnRegisterCow, @NonNull CardView cvRecycler, @NonNull RecyclerView rvCows,
       @NonNull TextView tvDescription, @NonNull TextView tvRegisteredCows) {
     this.rootView = rootView;
+    this.btnHome = btnHome;
     this.btnRegisterCow = btnRegisterCow;
     this.cvRecycler = cvRecycler;
     this.rvCows = rvCows;
@@ -75,6 +79,12 @@ public final class ActivityConsultCowsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnHome;
+      Button btnHome = ViewBindings.findChildViewById(rootView, id);
+      if (btnHome == null) {
+        break missingId;
+      }
+
       id = R.id.btnRegisterCow;
       Button btnRegisterCow = ViewBindings.findChildViewById(rootView, id);
       if (btnRegisterCow == null) {
@@ -105,8 +115,8 @@ public final class ActivityConsultCowsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityConsultCowsBinding((ConstraintLayout) rootView, btnRegisterCow, cvRecycler,
-          rvCows, tvDescription, tvRegisteredCows);
+      return new ActivityConsultCowsBinding((ConstraintLayout) rootView, btnHome, btnRegisterCow,
+          cvRecycler, rvCows, tvDescription, tvRegisteredCows);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

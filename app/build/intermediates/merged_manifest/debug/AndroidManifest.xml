@@ -36,6 +36,15 @@
         android:testOnly="true"
         android:theme="@style/Theme.ProyectoGanadero" >
         <activity
+            android:name="com.jpdev.proyectoganadero.ui.Finance.SellCowActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.jpdev.proyectoganadero.ui.Finance.ReceiptHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.jpdev.proyectoganadero.ui.Finance.BuyActivity"
+            android:exported="false" />
+        <activity
             android:name="com.jpdev.proyectoganadero.ui.Cow.Consult.ConsultCowsActivity"
             android:exported="false" />
         <activity
@@ -57,7 +66,7 @@
             android:name="com.jpdev.proyectoganadero.ui.Finance.FinanceActivity"
             android:exported="false" />
         <activity
-            android:name="com.jpdev.proyectoganadero.ui.Cow.CowActivity"
+            android:name="com.jpdev.proyectoganadero.ui.Cow.Register.RegisterCowActivity"
             android:exported="false" />
         <activity
             android:name="com.jpdev.proyectoganadero.ui.User.Consult.UserActivity"
